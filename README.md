@@ -7,3 +7,7 @@ Instructions on how to run the web-app:
 2) Then we run the server file we created in our project with command: node server.js and what happens is the server is running on port:3000 as we defined it and our MongoDB database is connected as well.
 
   <img width="641" height="87" alt="image" src="https://github.com/user-attachments/assets/5bf59b16-67cc-4255-9df4-18686e0c03fe" />
+
+Then we go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page: 
+
+  <img width="528" height="764" alt="image" src="https://github.com/user-attachments/assets/23809255-8142-449f-b9f3-50525f27a27a" />
