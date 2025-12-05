@@ -10,4 +10,9 @@ Instructions on how to run the web-app:
 
 Then we go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page: 
 
-  <img width="528" height="764" alt="image" src="https://github.com/user-attachments/assets/23809255-8142-449f-b9f3-50525f27a27a" />
+  <img width="534" height="774" alt="image" src="https://github.com/user-attachments/assets/eb6d3b02-12a2-4cec-8cee-7de95744f362" />
+
+The previous screenshot shows a simple login form in which the user can enter its credentials and finally login to our main frontend/index.html webpage. If the user has no credentials, she/he can use the form below in order to make a registration. Below is the register.html page: 
+
+  <img width="977" height="523" alt="image" src="https://github.com/user-attachments/assets/436f9143-0a62-4c8b-850f-03efb4cc00bc" />
+
