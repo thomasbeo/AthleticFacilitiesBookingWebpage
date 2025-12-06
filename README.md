@@ -35,6 +35,8 @@ and we return to the login page. We use the previous credentials and we click on
 
 Ther localhost:3000 server confirms it with the message:
 
-  <img width="1168" height="337" alt="image" src="https://github.com/user-attachments/assets/a0564307-dd9d-479b-9b77-398474c34333" />
+  <img width="626" height="168" alt="image" src="https://github.com/user-attachments/assets/fea81d48-e647-4995-9dd0-aa2c1aa4c8f8" />
 
 And we finally login to our main frontend/index.html page which is shown below:
+
+  
