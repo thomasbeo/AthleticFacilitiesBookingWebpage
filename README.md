@@ -1,7 +1,7 @@
 # AthleticFacilitiesBookingWebApp
 Instructions on how to run the web-app:
 
-Step 1: We open cmd(command promt) and navigate to the path of our project. The path of our current project is: C:\web-app-dev\athletic_facilities_booking. So we write on cmd the command: cd C:\web-app-dev\athletic_facilities_booking
+Step 1: We open command promt(cmd) and navigate to the path of our project. The path of our current project is: C:\web-app-dev\athletic_facilities_booking. So we write on cmd the command: cd C:\web-app-dev\athletic_facilities_booking
 
   <img width="675" height="197" alt="image" src="https://github.com/user-attachments/assets/d6de4996-bd1f-430c-b99c-4b5c163eb278" />                                              
 
