@@ -28,4 +28,14 @@ Then we click on the field:
 
   <img width="290" height="28" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />
 
-and we return to the login page. We user the previous credentials to login: 
+and we return to the login page. We use the previous credentials and we click on the button "" to login: 
+
+  <img width="534" height="776" alt="image" src="https://github.com/user-attachments/assets/93adda6c-ea4c-4eee-9bf9-ac86efd771c7" />
+
+Ther localhost:3000 server confirms it with the message:
+
+  <img width="672" height="218" alt="image" src="https://github.com/user-attachments/assets/3904e4bb-5809-47a9-ba98-521cb78250f1" />
+
+And we finally login to our main frontend/index.html page:
+
+  
