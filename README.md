@@ -39,6 +39,10 @@ Ther localhost:3000 server confirms it with the message:
 
 And we finally login to our main frontend/index.html page which is shown below:
 
-  <img width="1138" height="873" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" /> <img width="1895" height="161" alt="image" src="https://github.com/user-attachments/assets/9018444c-bcd7-4b84-8258-7e25ca17e8c6" /> 
+  <img width="1138" height="873" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" /> 
 
-We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options. The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following 
+We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
+
+  <img width="1895" height="161" alt="image" src="https://github.com/user-attachments/assets/9018444c-bcd7-4b84-8258-7e25ca17e8c6" /> 
+
+The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following buttons.
