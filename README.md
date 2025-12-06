@@ -39,4 +39,4 @@ Ther localhost:3000 server confirms it with the message:
 
 And we finally login to our main frontend/index.html page which is shown below:
 
-  
+  <img width="1920" height="797" alt="image" src="https://github.com/user-attachments/assets/08a0f091-d90c-4eb1-9f32-92d2a29dd3f0" />
