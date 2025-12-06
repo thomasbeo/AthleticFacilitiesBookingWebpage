@@ -12,7 +12,12 @@ Then we go to the browser and type the URL: http://localhost:3000 which redirect
 
   <img width="534" height="774" alt="image" src="https://github.com/user-attachments/assets/eb6d3b02-12a2-4cec-8cee-7de95744f362" />
 
-The previous screenshot shows a simple login form in which the user can enter its credentials and finally login to our main frontend/index.html webpage. If the user has no credentials, she/he can use the form below in order to make a registration. Below is the frontend/register.html page: 
+The previous screenshot shows a simple login form in which the user can enter its credentials and finally login to our main frontend/index.html webpage. If the user has no credentials, she/he can click on the field: 
+
+  <img width="244" height="31" alt="image" src="https://github.com/user-attachments/assets/0a1436a3-9a46-42c8-96a8-7f875f2bcf17" />
+
+This redirects the user to our frontend/register.html page below:
 
   <img width="977" height="523" alt="image" src="https://github.com/user-attachments/assets/436f9143-0a62-4c8b-850f-03efb4cc00bc" />
 
+If the user forgets its credentials, she/he can 
