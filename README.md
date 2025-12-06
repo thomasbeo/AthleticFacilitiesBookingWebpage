@@ -20,4 +20,14 @@ This redirects the user to our frontend/register.html page below:
 
   <img width="977" height="523" alt="image" src="https://github.com/user-attachments/assets/436f9143-0a62-4c8b-850f-03efb4cc00bc" />
 
-If the user forgets its credentials, she/he can 
+If the user forgets its credentials, she/he can click on the field:
+
+  <img width="318" height="27" alt="image" src="https://github.com/user-attachments/assets/cf2dab4d-df06-43b0-9d6e-a07213928368" />
+
+and then appears a frontend/ForgotPassword.html page in which can enter her/his email address. Then by clicking the button: 
+
+  <img width="269" height="54" alt="image" src="https://github.com/user-attachments/assets/d9498ebe-1a32-4dfe-8d38-dfcfd393e5df" />
+
+
+
+
