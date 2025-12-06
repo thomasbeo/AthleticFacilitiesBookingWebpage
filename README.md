@@ -9,3 +9,7 @@ Instructions on how to run the web-app:
   <img width="641" height="87" alt="image" src="https://github.com/user-attachments/assets/5bf59b16-67cc-4255-9df4-18686e0c03fe" />
 
 Then we go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
+
+  <img width="541" height="781" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6" />
+
+The previous screenshot shows
