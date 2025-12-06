@@ -17,7 +17,7 @@ The previous screenshot shows a simple login form in which the user can enter it
 
   <img width="234" height="28" alt="image" src="https://github.com/user-attachments/assets/3255017c-3d30-46d1-a77c-5e65af324050" />
 
-Then we get redirected to the frontend/register.html page as it is shown below, enter the credentials of a user and click on the button "": 
+Then we get redirected to the frontend/register.html page as it is shown below, enter the credentials of a user and click on the button "Εγγραφή": 
 
   <img width="978" height="532" alt="image" src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" />
 
@@ -29,7 +29,7 @@ Then we click on the field:
 
   <img width="290" height="28" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />
 
-and we return to the login page. We use the previous credentials and we click on the button "" to login: 
+and we return to the login page. We use the previous credentials and we click on the button "Σύνδεση" to login: 
 
   <img width="534" height="776" alt="image" src="https://github.com/user-attachments/assets/93adda6c-ea4c-4eee-9bf9-ac86efd771c7" />
 
@@ -41,5 +41,11 @@ And we finally login to our main frontend/index.html page which is shown below:
 
   <img width="1138" height="873" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" />
 
-We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend more presentable and has different options. 
+We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
+
+  <img width="1895" height="161" alt="image" src="https://github.com/user-attachments/assets/9018444c-bcd7-4b84-8258-7e25ca17e8c6" /> 
+
+The user can hover or click on the different existing buttons. 
+
+  <img width="188" height="486" alt="image" src="https://github.com/user-attachments/assets/b0d70973-260e-4297-ab68-12c33e8fa185" />
 
