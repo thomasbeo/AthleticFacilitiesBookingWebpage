@@ -12,4 +12,4 @@ Then we go to the browser and type the URL: http://localhost:3000 which redirect
 
   <img width="541" height="781" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6" />
 
-The previous screenshot shows
+The previous screenshot shows a simple login form in which the user can enter its credentials and login to our main frontend/index.html webpage. What we will describe below is the capabilities of our app. 
