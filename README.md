@@ -3,6 +3,7 @@ Instructions on how to run the web-app:
 Step 1: We open cmd(command promt) and navigate to the path of our project. The path of our current project is: C:\web-app-dev\athletic_facilities_booking. So we write on cmd the command: cd C:\web-app-dev\athletic_facilities_booking
 
   <img width="675" height="197" alt="image" src="https://github.com/user-attachments/assets/d6de4996-bd1f-430c-b99c-4b5c163eb278" />
+                                                              (1)
 
 Step 2: Then we run the server file we created in our project with command: node server.js and what happens is the server is running on port:3000 as we defined it and our MongoDB database is connected as well.
 
