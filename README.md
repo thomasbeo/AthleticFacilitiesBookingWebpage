@@ -1,4 +1,4 @@
-# AthleticFacilitiesBookingWebpage
+# AthleticFacilitiesBookingWebApp
 Instructions on how to run the web-app:
 1) We open cmd(command promt) and navigate to the path of our project. The path of our current project is: C:\web-app-dev\athletic_facilities_booking. So we write on cmd the command: cd C:\web-app-dev\athletic_facilities_booking
 
