@@ -39,4 +39,7 @@ Ther localhost:3000 server confirms it with the message:
 
 And we finally login to our main frontend/index.html page which is shown below:
 
-  
+  <img width="1138" height="873" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" />
+
+We are going to expain what our frontend/index.html file includes step by step.  
+
