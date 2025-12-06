@@ -16,11 +16,16 @@ The previous screenshot shows a simple login form in which the user can enter it
 
   <img width="234" height="28" alt="image" src="https://github.com/user-attachments/assets/3255017c-3d30-46d1-a77c-5e65af324050" />
 
-Then we get redirected to the frontend/register.html page as it is shown below:
-
-  <img width="982" height="527" alt="image" src="https://github.com/user-attachments/assets/6aacb27a-d8c7-4970-a061-9d977ebd478b" />
-
-We enter the credentials of a user 
+Then we get redirected to the frontend/register.html page as it is shown below, enter the credentials of a user and click on the button "": 
 
   <img width="978" height="532" alt="image" src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" />
 
+Then the credentials of the previous user are stored on our MongoDB Atlas database in the users field:
+
+  <img width="996" height="225" alt="image" src="https://github.com/user-attachments/assets/ef34040f-6b0b-4383-b2d5-5f7a061a15df" />
+
+Then we click on the field: 
+
+  <img width="290" height="28" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />
+
+and we return to the login page. We user the previous credentials to login: 
