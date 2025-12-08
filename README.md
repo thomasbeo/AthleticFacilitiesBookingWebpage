@@ -86,5 +86,6 @@ Furthermore on the dropdown menu if we click on the field named "Λογαρια�
 
   <p align="center"><img width="495" height="214" alt="image" src="https://github.com/user-attachments/assets/10803599-dee1-4533-ae37-7409316d2b15" /></p>
 
-and lastly if we click on the field "Αποσύνδεση" we get redirected back to the login page. Now if we try for example to login with different credentials of another user:
+and lastly if we click on the field "Αποσύνδεση" we get redirected back to the login page. Now we will try to login with different credentials of another user, make a reservation and modify it.
 
+  
