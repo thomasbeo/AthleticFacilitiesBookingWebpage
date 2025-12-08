@@ -81,3 +81,9 @@ and if we click on the button "Εξαγωγή σε PDF", then it downloads a pdf
   <p align="center">
     <img width="637" height="717" alt="image" src="https://github.com/user-attachments/assets/0e1dc922-8a40-4d5e-b72c-39da3c8d231e" />
   </p>
+
+Furthermore on the dropdown menu if we click on the field named "Λογαριασμός" then we can see some information related to the logged in user. In this case we get:
+
+  <p align="center"><img width="495" height="214" alt="image" src="https://github.com/user-attachments/assets/10803599-dee1-4533-ae37-7409316d2b15" /></p>
+
+and lastly if we click on the field "Αποσύνδεση" we get redirected back to the login page. 
