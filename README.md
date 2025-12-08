@@ -45,4 +45,8 @@ We are going to expain what our frontend/index.html file includes step by step. 
 
   <img width="1895" height="161" alt="image" src="https://github.com/user-attachments/assets/9018444c-bcd7-4b84-8258-7e25ca17e8c6" /> 
 
-The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following buttons.
+The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following buttons:
+
+<p align="center">
+  <img width="184" height="487" alt="image" src="https://github.com/user-attachments/assets/3bf98afa-27cf-483d-9232-b3d987e0a122" />
+</p>
