@@ -60,11 +60,8 @@ These reservations are saved as well on our MongoDB Atlas database on the reserv
   <img width="396" height="173" alt="image" src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" />
 </p>
 
-By clicking on the "Κρατήσεις" field we can observe all the existing reservations for all the registered users as it is shown below. For the sake of the app we created some imaginary users. Currently there are 6 users that .
+By clicking on the "Κρατήσεις" field we can observe all the existing reservations for all the registered users. For the sake of the app we created some users with imaginary names. Currently there are 6 users that have made reservations as it is shown below.
 
-  <img align="left" width="800" height="614" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
-  <p align="center">
-    <img width="600" height="150" alt="image" src="https://github.com/user-attachments/assets/2160ee47-93dd-4931-bf78-195a997be00d" />
-    <img width="600" height="129" alt="image" src="https://github.com/user-attachments/assets/056cbaeb-35ba-43a9-89f3-c0b8b3a94eb7" />
-
-  </p>
+<p align="center">
+  <img width="1000" height="614" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
+</p>
