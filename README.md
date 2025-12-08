@@ -49,13 +49,22 @@ The user can hover or click on the different existing buttons. The field named "
 
 <p align="center"><img width="184" height="486" alt="image" src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" /></p>
 
-By clicking on the Dashboard field we can observe the existing reservations of the logged in user. 
+By clicking on the "Dashboard" field we can observe the existing reservations of the logged in user. 
 
 <p align="center"><img width="1000" height="275" alt="image" src="https://github.com/user-attachments/assets/0e563810-575b-418c-959e-6a8bd34c7bab" /></p>
 
-These reservations are saved as well on our database on the field reservations: 
+These reservations are saved as well on our MongoDB Atlas database on the reservations field: 
 
 <p align="center">
   <img width="420" height="159" alt="image" src="https://github.com/user-attachments/assets/2dbf42d3-065e-49d9-a5c5-8f65b7ea7c20" />
   <img width="396" height="173" alt="image" src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" />
 </p>
+
+By clicking on the "Κρατήσεις" field we can observe all the existing reservations for all the registered users as it is shown below. For the sake of the app we created some imaginary users. Currently there are 6 users that .
+
+  <img align="left" width="800" height="614" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
+  <p align="center">
+    <img width="600" height="150" alt="image" src="https://github.com/user-attachments/assets/2160ee47-93dd-4931-bf78-195a997be00d" />
+    <img width="600" height="129" alt="image" src="https://github.com/user-attachments/assets/056cbaeb-35ba-43a9-89f3-c0b8b3a94eb7" />
+
+  </p>
