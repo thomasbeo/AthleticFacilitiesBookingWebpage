@@ -57,5 +57,5 @@ These reservations are saved as well on our database on the field reservations:
 
 <p align="center">
   <img width="420" height="159" alt="image" src="https://github.com/user-attachments/assets/2dbf42d3-065e-49d9-a5c5-8f65b7ea7c20" />
-  <img width="414" height="180" alt="image" src="https://github.com/user-attachments/assets/cadf43a6-bd61-4083-8dfc-034283189730" />
+  <img width="396" height="173" alt="image" src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" />
 </p>
