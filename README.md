@@ -74,7 +74,8 @@ Lastly there is a searchbox under the word "Κρατήσεις" where the user c
 
 Next by clicking on the field "Back Office" only if the user has an "admin" role, she/he can view the canceled reservations. For example if we click on this field we get: 
 
-  
+  <img width="800" height="531" alt="image" src="https://github.com/user-attachments/assets/24f64138-b5cb-428c-8ca1-6d498a9828a1" />
+  <img width="800" height="807" alt="image" src="https://github.com/user-attachments/assets/485e3b08-c171-4641-8833-3a8436872398" />
 
 and if we click on the button "Εξαγωγή σε PDF", then it downloads a pdf file containing all those canceled reservations:
 
