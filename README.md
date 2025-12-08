@@ -60,11 +60,17 @@ These reservations are saved as well on our MongoDB Atlas database on the reserv
   <img width="396" height="173" alt="image" src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" />
 </p>
 
-By clicking on the "Κρατήσεις" field we can observe all the existing reservations for all the registered users. For the sake of the app we created some users with imaginary names. Currently there are 6 users that have made reservations as it is shown below.
+By clicking on the "Κρατήσεις" field we can observe all the existing reservations for all the registered users. For the sake of the app we created some users with imaginary names. Currently there are 6 users that have made the following reservations. 
 
 <p align="center">
   <img width="1000" height="614" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
 </p>
+
+Lastly there is a searchbox under the word "Κρατήσεις" where the user can make a search accordingly with the name of the Facility, the Date and the name of the user. For example if we type the word "Football Field" in this searchbox, then are appeared the reservations happened on the facility with this name:
+
+  <p align="center">
+    <img width="1332" height="368" alt="image" src="https://github.com/user-attachments/assets/d18c9c4c-7272-417c-a7a0-f4545bdecf83" />
+  </p>
 
 Next by clicking on the field "Back Office" only if the user has an "admin" role, she/he can view the canceled reservations. For example if we click on this field we get: 
 
