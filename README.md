@@ -65,3 +65,5 @@ By clicking on the "Κρατήσεις" field we can observe all the existing re
 <p align="center">
   <img width="1000" height="614" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
 </p>
+
+Next by clicking on the field "Back Office" 
