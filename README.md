@@ -53,7 +53,7 @@ By clicking on the "Dashboard" field we can observe the existing reservations of
 
 <p align="center"><img width="1000" height="275" alt="image" src="https://github.com/user-attachments/assets/0e563810-575b-418c-959e-6a8bd34c7bab" /></p>
 
-These reservations are saved as well on our MongoDB Atlas database on the reservations field: 
+These reservations are saved as well on our MongoDB Atlas database: 
 
 <p align="center">
   <img width="420" height="159" alt="image" src="https://github.com/user-attachments/assets/2dbf42d3-065e-49d9-a5c5-8f65b7ea7c20" />
@@ -88,4 +88,8 @@ Furthermore on the dropdown menu if we click on the field named "Λογαρια�
 
 and lastly if we click on the field "Αποσύνδεση" we get redirected back to the login page. Now we will try to login with different credentials of another user, make a reservation and modify it.
 
-  
+<p align="center">
+  <img width="538" height="778" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
+  <img width="609" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
+  <img width="488" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f" />
+</p>
