@@ -52,6 +52,7 @@ We are going to expain what our frontend/index.html file includes step by step. 
 The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following buttons:
 
 <p align="center"><img width="175" height="400" alt="image" src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" /></p>
+
 By clicking on the "Dashboard" field we can observe the existing reservations of the logged in user. 
 
 <p align="center"><img width="1000" height="275" alt="image" src="https://github.com/user-attachments/assets/0e563810-575b-418c-959e-6a8bd34c7bab" /></p>
