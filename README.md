@@ -29,7 +29,9 @@ Then the credentials of the previous user are stored on our MongoDB Atlas databa
 
 Then we click on the field: 
 
-  <img width="290" height="28" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />
+<p>
+    <img width="250" height="30" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />  
+</p>
 
 and we return to the login page. We use the previous credentials and we click on the button "Σύνδεση" to login: 
 
