@@ -103,3 +103,7 @@ As we can see now we logged in using credentials of a user named: "Χρήστο�
 <p align="center">
   <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/7a396e80-9eeb-417a-97b8-771e0ed079b2" />
 </p>
+
+This is because the user has role: "customer" and not "admin". Only "admin" users can see the contents of the "Back Office" field. Now we assume that he wants to make a reservation on the facility with name: "Basketball court" as it is shown below:
+
+  <img width="250" height="400" alt="image" src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" />
