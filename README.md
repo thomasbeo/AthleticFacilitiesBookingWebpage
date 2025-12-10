@@ -21,7 +21,7 @@ The previous screenshot shows a simple login form in which the user can enter it
 
 Then we get redirected to the frontend/register.html page as it is shown below, enter the credentials of a user and click on the button "Εγγραφή": 
 
-  <img width="978" height="532" alt="image" src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" />
+  <img width="750" height="450" alt="image" src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" />
 
 Then the credentials of the previous user are stored on our MongoDB Atlas database in the users field:
 
