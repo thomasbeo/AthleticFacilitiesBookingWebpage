@@ -4,14 +4,15 @@ Instructions on how to run the web-app:
 Step 1: We open command promt(cmd) and navigate to the path of our project. The path of our current project is: C:\web-app-dev\athletic_facilities_booking. So we write on cmd the command: cd C:\web-app-dev\athletic_facilities_booking
 
   <img width="675" height="197" alt="image" src="https://github.com/user-attachments/assets/d6de4996-bd1f-430c-b99c-4b5c163eb278" />                                              
-
 Step 2: Then we run the server file we created in our project with command: node server.js and what happens is the server is running on port:3000 as we defined it and our MongoDB database is connected as well.
 
   <img width="641" height="87" alt="image" src="https://github.com/user-attachments/assets/5bf59b16-67cc-4255-9df4-18686e0c03fe" />
 
 Then we go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
 
-  <img width="541" height="781" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6" />
+<p align="center">
+    <img width="541" height="781" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6" />  
+</p>
 
 The previous screenshot shows a simple login form in which the user can enter its credentials and login to our main frontend/index.html webpage. What we will describe below is the capabilities of our app. More specifically we will analyze the steps on how the user can login to the main page, make an online reservation to one of the available facilities and how this reservation is stored correctly to our database. First of all we run the server as mentioned in the previous steps 1-2. Then we register the user by clicking on the field:
 
@@ -31,7 +32,9 @@ Then we click on the field:
 
 and we return to the login page. We use the previous credentials and we click on the button "Σύνδεση" to login: 
 
+<p align="center">
   <img width="534" height="776" alt="image" src="https://github.com/user-attachments/assets/93adda6c-ea4c-4eee-9bf9-ac86efd771c7" />
+</p>
 
 Ther localhost:3000 server confirms it with the message:
 
@@ -90,8 +93,12 @@ and lastly if we click on the field "Αποσύνδεση" we get redirected bac
 
 <p align="center">
   <img width="550" height="778" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
-  <img width="450" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
-  <img width="400" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
+  <img width="500" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
+  <img width="350" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
 </p>
 
-We logged in using credentials 
+As we can see now we logged in using credentials of a user named: "Χρήστος Κρατημένος" and this user has role: "customer". Now if we click on the "Back Office" field we get the message:
+
+<p align="center">
+  <img width="300" height="187" alt="image" src="https://github.com/user-attachments/assets/7a396e80-9eeb-417a-97b8-771e0ed079b2" />
+</p>
