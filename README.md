@@ -29,7 +29,7 @@ Then the credentials of the previous user are stored on our MongoDB Atlas databa
 
 Then we click on the field: 
 
-    <img align="left" width="250" height="30" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />  
+  <img width="250" height="30" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />  
 
 and we return to the login page. We use the previous credentials and we click on the button "Σύνδεση" to login: 
 
@@ -39,7 +39,7 @@ and we return to the login page. We use the previous credentials and we click on
 
 Ther localhost:3000 server confirms it with the message:
 
-  <img width="626" height="168" alt="image" src="https://github.com/user-attachments/assets/fea81d48-e647-4995-9dd0-aa2c1aa4c8f8" />
+  <img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/fea81d48-e647-4995-9dd0-aa2c1aa4c8f8" />
 
 And we finally login to our main frontend/index.html page which is shown below:
 
