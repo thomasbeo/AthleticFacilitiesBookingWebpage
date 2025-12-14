@@ -108,5 +108,5 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
 
 <p>
   <img width="250" height="400" alt="image" src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" />
-  
+  <img width="350" height="388" alt="image" src="https://github.com/user-attachments/assets/88dddfe6-2f43-4156-8d0b-abe03063cd6f" />
 </p>
