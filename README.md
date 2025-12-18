@@ -93,16 +93,14 @@ Furthermore on the dropdown menu if we click on the field named "Λογαρια�
 and lastly if we click on the field "Αποσύνδεση" we get redirected back to the login page. Now we will try to login with different credentials of another user, make a reservation and modify it.
 
 <p align="center">
-  <img width="500" height="550" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
+  <img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
   <img width="500" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
   <img width="350" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
 </p>
 
 As we can see now we logged in using credentials of a user named: "Χρήστος Κρατημένος" and this user has role: "customer". Now if we click on the "Back Office" field we get the message:
 
-<p align="center">
-  <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/7a396e80-9eeb-417a-97b8-771e0ed079b2" />
-</p>
+  <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/7a396e80-9eeb-417a-97b8-771e0ed079b2" />
 
 This is because the user has role: "customer" and not "admin". Only "admin" users can see the contents of the "Back Office" field. Now let's assume that we want to make a reservation on the facility with name: "Basketball court" as it is shown below. We click on the button "Κάνε Κράτηση" and it appears a simple form which the user needs to fill. We fill all the fields selecting Full Name, Date and Time Slot and then we click on the button "Reserve". As we can see it is saved successfully to our MongoDbB Atlas database.  
 
