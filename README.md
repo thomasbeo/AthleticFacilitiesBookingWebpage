@@ -94,9 +94,9 @@ and lastly if we click on the field "Αποσύνδεση" we get redirected bac
 
 <p align="center">
   <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
-  <img width="300" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
-  <img width="250" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
 </p>
+  <img width="500" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
+  <img width="350" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
 
 As we can see now we logged in using credentials of a user named: "Χρήστος Κρατημένος" and this user has role: "customer". Now if we click on the "Back Office" field we get the message:
 
