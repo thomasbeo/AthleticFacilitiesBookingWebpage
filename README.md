@@ -118,4 +118,7 @@ Also the user receives a confirmation mail which includes the information relate
   <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8e2fe0f7-ee2a-45c2-8028-a464ef4c85c7" />
 </p>
 
-We can modify this reservation. We have the possibility to change the  
+We can modify this reservation. We have the possibility to change the Date and Time Slot. It is saved on the field: "Κρατήσεις". 
+
+  <img width="1000" height="50" alt="image" src="https://github.com/user-attachments/assets/3c5fa68f-588f-459b-86c3-24e390ec4734" />
+
