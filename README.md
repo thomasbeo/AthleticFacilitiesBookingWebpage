@@ -74,7 +74,9 @@ Lastly there is a searchbox under the word "Κρατήσεις" where the user c
 
 Next by clicking on the field "Back Office" only if the user has an "admin" role, she/he can view the canceled reservations. For example if we click on this field we get: 
 
-  
+  <p align="center">
+    <img width="450" height="850" alt="image" src="https://github.com/user-attachments/assets/9934b944-2bde-44e2-ad74-04ae59082af0" />
+  </p>
 
 and if we click on the button "Εξαγωγή σε PDF", then it downloads a pdf file containing all those canceled reservations:
 
@@ -116,7 +118,7 @@ We can modify this reservation. We have the possibility to change the Date and T
 
   <img width="1000" height="50" alt="image" src="https://github.com/user-attachments/assets/3c5fa68f-588f-459b-86c3-24e390ec4734" />
 
-By clicking the button named "Επεξεργασία" we have the chance to modify the reservation. When we click it, then pops up the following form. We choose a Date, Time Slot and we click on the button below. As a result it is modified successfully and saved as well.
+By clicking the button named "Επεξεργασία" we have the chance to modify the reservation. When we click it, then pops up the following form. We choose a Date, Time Slot and we click on the button below. As a result it is modified successfully and saved as well. Also by clicking the button: "Διαγραφή" we can delete the reservation and then it is saved to the BackOffice.html page.
 
 <p align="center">
   <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/637a4382-e4e1-45b2-b70d-27bb5414780d" />
