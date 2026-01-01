@@ -118,4 +118,7 @@ We can modify this reservation. We have the possibility to change the Date and T
 
 By clicking the button named "Επεξεργασία" we have the chance to modify the reservation. When we click it, then pops up the following form. We choose a Date, Time Slot and we click on the button below. As a result it is modified successfully and saved as well.
 
+<p align="center">
   <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/637a4382-e4e1-45b2-b70d-27bb5414780d" />
+  <img width="750" height="50" alt="image" src="https://github.com/user-attachments/assets/536f2321-fd3c-4d08-bcfa-ce9d333ed208" />
+</p>
