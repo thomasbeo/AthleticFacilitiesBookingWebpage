@@ -25,7 +25,7 @@ Then we get redirected to the frontend/register.html page as it is shown below, 
 
 Then the credentials of the previous user are stored on our MongoDB Atlas database in the users field:
 
-  <img width="996" height="225" alt="image" src="https://github.com/user-attachments/assets/ef34040f-6b0b-4383-b2d5-5f7a061a15df" />
+  <img width="950" height="225" alt="image" src="https://github.com/user-attachments/assets/ef34040f-6b0b-4383-b2d5-5f7a061a15df" />
 
 Then we click on the field: 
 
