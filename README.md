@@ -118,5 +118,4 @@ We can modify this reservation. We have the possibility to change the Date and T
 
 By clicking the button named "Επεξεργασία" we have the chance to modify the reservation. When we click it, then pops up the following form:
 
-  <img width="499" height="302" alt="image" src="https://github.com/user-attachments/assets/c3eb2b20-d2bf-4e17-abe2-1489cc2da190" />
-
+  <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/637a4382-e4e1-45b2-b70d-27bb5414780d" />
