@@ -1,13 +1,9 @@
 # AthleticFacilitiesBookingWebApp
 Instructions on how to run the web application:
 
-Step 1: We open command promt(cmd) and navigate to the path of our project. The path of our current project is: C:\web-app-dev\athletic_facilities_booking. So we write on cmd the command: cd C:\web-app-dev\athletic_facilities_booking
+Step 1: We navigate to the path of our project which is: C:\web-app-dev\athletic_facilities_booking and then we run the server file which initializes a connection and connects to our MongoDB Atlas database. 
 
-  <img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/d6de4996-bd1f-430c-b99c-4b5c163eb278"/>                                           
-  
-Step 2: Then we run the server file we created in our project with command: node server.js and what happens is the server is running on port:3000 as we defined it and our MongoDB database is connected as well.
-
-  <img width="400" height="60" alt="image" src="https://github.com/user-attachments/assets/5bf59b16-67cc-4255-9df4-18686e0c03fe"/>
+  <img width="400" height="50" alt="image" src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" />
 
 Then we go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
 
