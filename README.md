@@ -3,7 +3,7 @@ Instructions on how to run the web application:
 
 We navigate to the path of our project which is: C:\web-app-dev\athletic_facilities_booking and then we run the server file which initializes a connection and connects to our MongoDB Atlas database. 
 
-  <img width="400" height="50" alt="image" src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" />
+  <img width="400" height="60" alt="image" src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" />
 
 Then go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
 
