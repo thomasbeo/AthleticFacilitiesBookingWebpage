@@ -121,3 +121,5 @@ By clicking the button named "Επεξεργασία" we have the chance to modi
   <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/637a4382-e4e1-45b2-b70d-27bb5414780d" />
   <img width="750" height="50" alt="image" src="https://github.com/user-attachments/assets/536f2321-fd3c-4d08-bcfa-ce9d333ed208" />
 </p>
+
+Eventually we modified the previous reservation by choosing a different date and timeslot. 
