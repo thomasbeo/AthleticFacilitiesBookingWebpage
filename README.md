@@ -17,7 +17,9 @@ The previous screenshot shows a simple login form in which the user can enter it
 
 Then we get redirected to the frontend/register.html page as it is shown below, enter the credentials of a user and click on the button "Εγγραφή": 
 
-  <img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" />
+<p align="center">
+  <img width="650" height="450" alt="image" src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" />
+</p>
 
 Then the credentials of the previous user are stored on our MongoDB Atlas database in the users field:
 
@@ -35,7 +37,7 @@ and we return to the login page. We use the previous credentials and we click on
 
 And then login to our main frontend/index.html page which is shown below:
 
-  <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" /> 
+  <img width="900" height="800" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" /> 
 
 We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
 
