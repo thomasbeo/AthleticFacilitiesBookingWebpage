@@ -8,7 +8,7 @@ We navigate to the path of our project which is: C:\web-app-dev\athletic_facilit
 Then we go to the browser to the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
 
 <p align="center">
-    <img width="541" height="781" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6"/>  
+    <img width="450" height="600" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6"/>  
 </p>
 
 The previous screenshot shows a simple login form in which the user can enter its credentials and login to our main frontend/index.html webpage. What we will describe below is the capabilities of our app. More specifically we will analyze the steps on how the user can login to the main page, make an online reservation to one of the available facilities and how this reservation is stored correctly to our database. First of all we run the server as mentioned in the previous steps 1-2. Then we register the user by clicking on the field:
