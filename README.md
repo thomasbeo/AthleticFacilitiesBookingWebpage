@@ -37,7 +37,9 @@ and we return to the login page. We use the previous credentials and we click on
 
 And then login to our main frontend/index.html page which is shown below:
 
-  <img width="900" height="800" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" /> 
+<p align="center">
+  <img width="900" height="800" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" />
+</p> 
 
 We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
 
