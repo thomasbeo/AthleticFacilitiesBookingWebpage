@@ -43,11 +43,11 @@ And then login to our main frontend/index.html page which is shown below:
 
 We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
 
-  <img width="1898" height="255" alt="image" src="https://github.com/user-attachments/assets/f108ceb5-a47b-440f-8c49-426838bdd15c" />
+  <img width="1900" height="255" alt="image" src="https://github.com/user-attachments/assets/f108ceb5-a47b-440f-8c49-426838bdd15c" />
 
 The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following buttons:
 
-<p align="center"><img width="175" height="400" alt="image" src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" /></p>
+<p align="center"><img width="175" height="300" alt="image" src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" /></p>
 
 By clicking on the "Dashboard" field we can observe the existing reservations of the logged in user. 
 
