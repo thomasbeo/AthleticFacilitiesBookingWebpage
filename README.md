@@ -5,7 +5,7 @@ We navigate to the path of our project which is: C:\web-app-dev\athletic_facilit
 
   <img width="400" height="60" alt="image" src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" />
 
-Then go to the browser and type the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
+Then we go to the browser to the URL: http://localhost:3000 which redirects us to the frontend/login.html page:
 
 <p align="center">
     <img width="541" height="781" alt="image" src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6"/>  
