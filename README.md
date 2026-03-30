@@ -25,7 +25,7 @@ Then the credentials of the previous user are stored on our MongoDB Atlas databa
 
   <img width="750" height="200" alt="image" src="https://github.com/user-attachments/assets/ef34040f-6b0b-4383-b2d5-5f7a061a15df" />
 
-Then we click on the field: 
+Then we click on the field "Σύνδεση χρήστη": 
 
   <img width="250" height="30" alt="image" src="https://github.com/user-attachments/assets/6b3fc5b5-8d6a-4627-a60f-e3d1ce6f891e" />  
 
