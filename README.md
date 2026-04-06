@@ -13,7 +13,9 @@ Then we go to the browser to the URL: http://localhost:3000 which redirects us t
 
 The previous screenshot shows a login form in which the user can enter its credentials and login to our main frontend/index.html webpage. What we will describe below is how our webpage works. More specifically we will analyze the steps on how the user can login to the main page, make an online reservation to one of the available facilities and how this reservation is stored correctly to our database. First of all we run the server as mentioned previously. Then we register the user by clicking on the field:
 
+<p align="center">
   <img width="200" height="25" alt="image" src="https://github.com/user-attachments/assets/3255017c-3d30-46d1-a77c-5e65af324050" />
+</p>
 
 Then we get redirected to the frontend/register.html page as it is shown below, enter the credentials of a user and click on the button "Εγγραφή": 
 
