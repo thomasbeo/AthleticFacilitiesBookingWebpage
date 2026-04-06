@@ -45,7 +45,7 @@ And then login to our main frontend/index.html page which is shown below:
   <img width="900" height="800" alt="image" src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" />
 </p> 
 
-We are going to expain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
+We are going to explain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
 
   <img width="1900" height="255" alt="image" src="https://github.com/user-attachments/assets/f108ceb5-a47b-440f-8c49-426838bdd15c" />
 
