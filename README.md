@@ -91,7 +91,7 @@ and if we click on the button "Εξαγωγή σε PDF", then it downloads a pdf
 
 Furthermore on the dropdown menu if we click on the field named "Λογαριασμός" then we can see some information related to the logged in user. In this case we get:
 
-  <p align="center"><img width="495" height="214" alt="image" src="https://github.com/user-attachments/assets/10803599-dee1-4533-ae37-7409316d2b15" /></p>
+  <p align="center"><img width="350" height="150" alt="image" src="https://github.com/user-attachments/assets/10803599-dee1-4533-ae37-7409316d2b15" /></p>
 
 and lastly if we click on the field "Αποσύνδεση" we get redirected back to the login page. Now we will try to login with different credentials of another user, make a reservation and modify it.
 
@@ -111,6 +111,8 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
 
 <p align="center">
   <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" />
+</p>
+<p align="center>
   <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/8b498d01-5774-4f43-8ad8-03a3a327fab5" />
   <img width="250" height="174" alt="image" src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" />
 </p>
