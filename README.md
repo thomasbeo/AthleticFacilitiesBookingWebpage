@@ -79,14 +79,14 @@ Lastly there is a searchbox under the word "Κρατήσεις" where the user c
 Next by clicking on the field "Back Office" only if the user has an "admin" role, she/he can view the canceled reservations. For example if we click on this field we get: 
 
   <p align="center">
-    <img width="835" height="531" alt="image" src="https://github.com/user-attachments/assets/cb836aed-bd70-4b42-9ed0-64320791d153" />
-    <img width="609" height="800" alt="image" src="https://github.com/user-attachments/assets/03278eed-968d-447c-9e9f-76e39498987b" />
+    <img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/cb836aed-bd70-4b42-9ed0-64320791d153" />
+    <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/03278eed-968d-447c-9e9f-76e39498987b" />
   </p>
 
 and if we click on the button "Εξαγωγή σε PDF", then it downloads a pdf file containing all those canceled reservations:
 
   <p align="center">
-    <img width="637" height="717" alt="image" src="https://github.com/user-attachments/assets/0e1dc922-8a40-4d5e-b72c-39da3c8d231e" />
+    <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/0e1dc922-8a40-4d5e-b72c-39da3c8d231e" />
   </p>
 
 Furthermore on the dropdown menu if we click on the field named "Λογαριασμός" then we can see some information related to the logged in user. In this case we get:
@@ -97,9 +97,10 @@ and lastly if we click on the field "Αποσύνδεση" we get redirected bac
 
 <p align="center">
   <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
+</p>
+
   <img width="500" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
   <img width="350" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
-</p>
 
 As we can see now we logged in using credentials of a user named: "Χρήστος Κρατημένος" and this user has role: "customer". Now if we click on the "Back Office" field we get the message:
 
@@ -119,9 +120,7 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
 
 Also the user receives a confirmation mail which includes the information related to the reservation:
 
-<p>
   <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8e2fe0f7-ee2a-45c2-8028-a464ef4c85c7" />
-</p>
 
 We can modify this reservation. We have the possibility to change the Date and Time Slot. It is saved on the field named "Κρατήσεις". 
 
