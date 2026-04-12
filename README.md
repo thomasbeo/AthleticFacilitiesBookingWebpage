@@ -47,7 +47,7 @@ And then login to our main frontend/index.html page which is shown below:
 
 We are going to explain what our frontend/index.html file includes step by step. First of all at the top there is a menu with a dropdown box which makes the whole frontend a bit more presentable and provides some options.
 
-  <img width="1900" height="255" alt="image" src="https://github.com/user-attachments/assets/f108ceb5-a47b-440f-8c49-426838bdd15c" />
+  <img width="1700" height="255" alt="image" src="https://github.com/user-attachments/assets/f108ceb5-a47b-440f-8c49-426838bdd15c" />
 
 The user can hover or click on the different existing buttons. The field named "Ο Λογαριασμός μου" has the following buttons:
 
@@ -60,20 +60,20 @@ By clicking on the "Dashboard" field we can observe the existing reservations of
 These reservations are saved as well on our MongoDB Atlas database: 
 
 <p align="center">
-  <img width="420" height="159" alt="image" src="https://github.com/user-attachments/assets/2dbf42d3-065e-49d9-a5c5-8f65b7ea7c20" />
-  <img width="396" height="173" alt="image" src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" />
+  <img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/2dbf42d3-065e-49d9-a5c5-8f65b7ea7c20" />
+  <img width="350" height="150" alt="image" src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" />
 </p>
 
 By clicking on the "Κρατήσεις" field we can observe all the existing reservations for all the registered users. For the sake of the app we created some users with imaginary names. Currently there are 6 users that have made the following reservations. 
 
 <p align="center">
-  <img width="1000" height="614" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
+  <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" />
 </p>
 
 Lastly there is a searchbox under the word "Κρατήσεις" where the user can make a search accordingly with the name of the Facility, the Date and the name of the user. For example if we type the word "Football Field" in this searchbox, then are appeared the reservations happened on the facility with this name:
 
   <p align="center">
-    <img width="1332" height="368" alt="image" src="https://github.com/user-attachments/assets/d18c9c4c-7272-417c-a7a0-f4545bdecf83" />
+    <img width="1000" height="330" alt="image" src="https://github.com/user-attachments/assets/d18c9c4c-7272-417c-a7a0-f4545bdecf83" />
   </p>
 
 Next by clicking on the field "Back Office" only if the user has an "admin" role, she/he can view the canceled reservations. For example if we click on this field we get: 
@@ -113,10 +113,8 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
 <p align="center">
   <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" />
 </p>
-<p align="center>
   <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/8b498d01-5774-4f43-8ad8-03a3a327fab5" />
   <img width="250" height="174" alt="image" src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" />
-</p>
 
 Also the user receives a confirmation mail which includes the information related to the reservation:
 
