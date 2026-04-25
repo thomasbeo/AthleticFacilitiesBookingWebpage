@@ -121,9 +121,7 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
 
 Also the user receives a confirmation mail which includes the information related to the reservation:
 
-<p align="center">
   <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8e2fe0f7-ee2a-45c2-8028-a464ef4c85c7" />
-</p>
 
 We can modify this reservation. We have the possibility to change the Date and Time Slot. It is saved on the field named "Κρατήσεις". 
 
