@@ -151,7 +151,7 @@ Open in browser: http://localhost:3000
   <img src="https://github.com/user-attachments/assets/7a396e80-9eeb-417a-97b8-771e0ed079b2" width="400"/>
 </p>
 
-Only **admin users** can access the Back Office.
+Only **admin users** can access the Back Office. 
 
 ---
 
