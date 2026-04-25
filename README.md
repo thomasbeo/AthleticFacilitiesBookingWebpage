@@ -97,11 +97,12 @@ and lastly if we click on the field "Αποσύνδεση" we get redirected bac
 
 <p align="center">
   <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
+  <img width="450" height="150" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
+  <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
 </p>
 
 <p align="center">
-  <img width="450" height="150" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
-  <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
+  
 </p>
 
 As we can see now we logged in using credentials of a user named: "Χρήστος Κρατημένος" and this user has role: "customer". Now if we click on the "Back Office" field we get the message:
@@ -115,12 +116,14 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
 <p align="center">
   <img width="350" height="400" alt="image" src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" />
   <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/8b498d01-5774-4f43-8ad8-03a3a327fab5" />
-  <img width="250" height="174" alt="image" src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" />
+  <img width="250" height="200" alt="image" src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" />
 </p>
 
 Also the user receives a confirmation mail which includes the information related to the reservation:
 
+<p align="center">
   <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8e2fe0f7-ee2a-45c2-8028-a464ef4c85c7" />
+</p>
 
 We can modify this reservation. We have the possibility to change the Date and Time Slot. It is saved on the field named "Κρατήσεις". 
 
