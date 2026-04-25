@@ -36,7 +36,7 @@ C:\web-app-dev\athletic_facilities_booking
 Start the server:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" style="max-width: 900px; width: 100%;" />
+  <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" style="max-width: 900px; width: 20%;" />
 </p>
 
 Open in browser:
