@@ -117,8 +117,16 @@ This is because the user has role: "customer" and not "admin". Only "admin" user
   <img width="300" height="350" alt="image" src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" />
 </p>
 
-  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/8b498d01-5774-4f43-8ad8-03a3a327fab5" />
-  <img width="450" height="200" alt="image" src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" />
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/user-attachments/assets/8b498d01-5774-4f43-8ad8-03a3a327fab5" width="400"/>
+      </td>
+      <td>
+        <img src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" width="400"/>
+      </td>
+    </tr>
+  </table>
 
 Also the user receives a confirmation mail which includes the information related to the reservation:
 
