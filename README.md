@@ -29,9 +29,7 @@
 
 ## 🚀 How to Run
 
-Navigate to your project directory:
-
-C:\web-app-dev\athletic_facilities_booking
+Navigate to your project directory: C:\web-app-dev\athletic_facilities_booking
 
 Start the server:
 
@@ -39,9 +37,7 @@ Start the server:
   <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" style="max-width: 900px; width: 60%;" />
 </p>
 
-Open in browser:
-
-http://localhost:3000
+Open in browser: http://localhost:3000
 
 ---
 
