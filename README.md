@@ -36,7 +36,7 @@ Then we click on the field "Σύνδεση χρήστη":
 and we return to the login page. We use the previous credentials and we click on the button "Σύνδεση" to login: 
 
 <p align="center">
-  <img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/93adda6c-ea4c-4eee-9bf9-ac86efd771c7" />
+  <img width="420" height="550" alt="image" src="https://github.com/user-attachments/assets/93adda6c-ea4c-4eee-9bf9-ac86efd771c7" />
 </p>
 
 And then login to our main frontend/index.html page which is shown below:
@@ -99,7 +99,7 @@ and lastly if we click on the field "Αποσύνδεση" we get redirected bac
   <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/402202d6-07fd-4d1f-b4b4-f2ae2d7d5074" />
 </p>
   
-  <img width="500" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
+  <img width="300" height="135" alt="image" src="https://github.com/user-attachments/assets/368ac1b5-8eb1-417a-82bc-7d8edbecbe41" />
   <img width="350" height="184" alt="image" src="https://github.com/user-attachments/assets/4a65f1a8-2662-4bb3-9e06-1b6117eafb7f"/>
 
 As we can see now we logged in using credentials of a user named: "Χρήστος Κρατημένος" and this user has role: "customer". Now if we click on the "Back Office" field we get the message:
