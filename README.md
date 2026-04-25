@@ -7,7 +7,7 @@ Navigate to your project directory: C:\web-app-dev\athletic_facilities_booking
 Then start the server:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" width="500"/>
+  <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" style="max-width: 900px; width: 100%;" />
 </p>
 
 Open your browser at: http://localhost:3000
