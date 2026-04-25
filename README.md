@@ -62,7 +62,7 @@ Stored in MongoDB:
 Dropdown:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" width="250"/>
+  <img src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" width="200"/>
 </p>
 
 ---
