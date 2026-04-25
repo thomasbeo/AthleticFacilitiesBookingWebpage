@@ -189,7 +189,7 @@ Users receive confirmation emails after successful reservations.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/637a4382-e4e1-45b2-b70d-27bb5414780d" width="400"/>
-  &nbsp;&nbsp;
+  &nbsp;&nbsp;<br>
   <img src="https://github.com/user-attachments/assets/536f2321-fd3c-4d08-bcfa-ce9d333ed208" width="600"/>
 </p>
 
