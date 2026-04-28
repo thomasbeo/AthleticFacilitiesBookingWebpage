@@ -1,0 +1,9 @@
+<h1>Available Facilities</h1>
+
+{{#each facilities}}
+  <div>
+    <h3>{{this.name}}</h3>
+    <p>{{this.description}}</p>
+    <a href="/reserve/{{this._id}}">Make a Reservation</a>
+  </div>
+{{/each}}

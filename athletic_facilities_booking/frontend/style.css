@@ -1,0 +1,381 @@
+/* ------------------------- NAVIGATION ------------------------- */
+nav {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #0066cc, #003366);
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+nav ul li.selected {
+  background-color: #d3d3d3;
+}
+
+nav ul li.selected a {
+  color: red;
+}
+
+.social-icons a {
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #f0c040;
+}
+
+/* ------------------------- GENERAL BODY ------------------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2c3e50;
+}
+
+/* ------------------------- FACILITIES SECTION ------------------------- */
+#facilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.facility-card {
+  background: white;
+  border-radius: 12px;
+  max-width: 280px;
+  flex: 1 1 280px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.facility-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.facility-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.facility-card h3 {
+  margin: 16px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.facility-card p {
+  margin: 0 16px 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.facility-card button {
+  display: block;
+  width: 80%;
+  margin: 0 auto 16px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(45deg, #28a745, #218838);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.facility-card button:hover {
+  background: linear-gradient(45deg, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+/* ------------------------- DROPDOWN ------------------------- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: black;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ------------------------- BACK OFFICE CARDS ------------------------- */
+#canceledList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+#canceledList .card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+#canceledList .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#canceledList .card-title {
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#canceledList .card-text, #canceledList p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+#canceledList .badge {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+#canceledList .btn-success {
+  background-color: #2ecc71;
+  border: none;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 100%;
+}
+
+#canceledList .btn-success:hover {
+  background-color: #27ae60;
+}
+
+#canceledList .btn-danger {
+  background-color: #e74c3c;
+  border: none;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#canceledList .btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* PDF Export Button */
+#canceledList .btn-outline-danger {
+  border-radius: 20px;
+  font-weight: bold;
+  border-width: 2px;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#canceledList .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #canceledList .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.welcome-banner {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  border-bottom: 1px solid #ccc;
+}
+
+.welcome-banner h1 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.welcome-banner p {
+  color: #555;
+  font-size: 18px;
+}
+
+.welcome {
+  font-size: 15px;
+}
+
+body.back_office { 
+  color: #f0f4f8;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Τίτλος */
+.back_office h2 {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* PDF Button */
+.back_office .btn-outline-danger {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.back_office .btn-outline-danger:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.badge-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.availability-status {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.text-success {
+  color: #28a745;
+  font-weight: bold;
+}
+.text-danger {
+  color: #dc3545;
+  font-weight: bold;
+}
+.text-muted {
+  color: #999;
+  font-style: italic;
+}
+
+.banner-section {
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.carousel-inner {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;  /* Ίδιο με το max-height */
+  width: 100%;
+}
+
+/* Για responsive εμφάνιση σε κινητά */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 240px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}

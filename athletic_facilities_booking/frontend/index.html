@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="welcome-banner"><h1>Καλωσήλθατε στο σύστημα κρατήσεων</h1></header>
+  <nav>
+    <ul class="d-flex flex-wrap justify-content-between align-items-center px-3 py-2">
+      <li class="initial"><a href="">Αρχική</a></li>
+      <li class="selected"><a href="">Εγκαταστάσεις</a></li>
+      <li class="announcements"><a href="">Ανακοινώσεις</a></li>
+      <li class="communication"><a href="">Επικοινωνία</a></li>
+      <li class="account dropdown">
+      <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Ο Λογαριασμός μου
+      </a>
+        <ul class="dropdown-menu">
+          <li><strong id="dropdownUsername" class="dropdown-item-text text-center"></strong></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a id="dashboardLink" class="dropdown-item" href="#">Dashboard</a></li>
+          <li><a id="reservationsLink" class="dropdown-item" href="#">Κρατήσεις</a></li>
+          <li><a id="back_office" class="dropdown-item" href="/BackOffice.html">Back Office</a></li>
+          <li><a id="accountLink" class="dropdown-item" href="#">Λογαριασμός</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#" onclick="logout()">Αποσύνδεση</a></li>
+        </ul>
+      </li>
+      <!-- Social Icons -->
+      <li class="social-icons d-flex align-items-center ms-3">
+        <a href="#" class="me-2"><i class="fab fa-facebook fa-lg">Facebook</i></a>
+        <a href="#" class="me-2"><i class="fab fa-instagram fa-lg">Instagram</i></a>
+        <a href="#"><i class="fab fa-youtube fa-lg">Youtube</i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="text-center my-4">
+    <button id="viewReservationsBtn" class="btn btn-primary">Δες Κρατήσεις</button>
+    <div class="text-end">
+      <span id="greeting" class="welcome">Καλωσήρθες!</span>
+    </div>    
+  </div>
+  
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h1>Available Facilities</h1>
+    </div>
+    <div id="facilities" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"></div>
+    <div id="reservations" class="mt-5"></div>
+  </div>
+
+  <!-- Reservation Modal -->
+  <div class="modal fade" id="reservationModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Make a Reservation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="reservationForm">
+            <input type="hidden" id="facilityId" />
+            <div class="mb-3">
+              <label for="userName" class="form-label">Full Name</label>
+              <input type="text" id="userName" class="form-control" placeholder="Το όνομά σας" required />
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" id="date" class="form-control" required />
+            </div>
+            <!-- Time Slot dropdown (αντί για text input) -->
+            <div class="mb-3">
+              <label for="timeSlot" class="form-label">Time Slot</label>
+              <select id="timeSlot" class="form-select" required>
+                <option value="10:00-12:00">10:00-12:00</option>
+                <option value="12:00-14:00">12:00-14:00</option>
+                <option value="14:00-16:00">14:00-16:00</option>
+                <option value="16:00-18:00">16:00-18:00</option>
+                <option value="18:00-20:00">18:00-20:00</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Reserve</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Reservation Modal -->
+  <div class="modal fade" id="editReservationModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Επεξεργασία Κράτησης</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editReservationForm">
+            <input type="hidden" id="editReservationId">
+            <div class="mb-3">
+              <label for="editDate" class="form-label">Ημερομηνία</label>
+              <input type="date" id="editDate" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="editTimeSlot" class="form-label">Ώρα</label>
+              <select id="editTimeSlot" class="form-select" required>
+                <option value="">Επέλεξε ώρα</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Αποθήκευση Αλλαγών</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Account Modal -->
+<div class="modal fade" id="accountModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ο Λογαριασμός μου</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="accountDetails">
+        Φόρτωση...
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <footer class="text-center py-3" style="background-color: #003366; color: white;">
+    &copy; 2025 Athletic Facilities Booking. All rights reserved.
+  </footer>
+</body>
+</html>

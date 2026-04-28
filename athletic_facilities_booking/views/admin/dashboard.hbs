@@ -1,0 +1,39 @@
+<h1>Admin Dashboard</h1>
+<h2>Add New Facility</h2>
+
+<form action="/admin/facilities" method="POST" enctype="multipart/form-data">
+  <input type="text" name="name" placeholder="Facility Name" required/>
+  <textarea name="description" placeholder="Description"></textarea>
+  <input type="file" name="photo" accept="image/*" required/>
+  <button type="submit">Add Facility</button>
+</form>
+
+{{#each facilities}}
+  <div>
+    <h3>{{this.name}}</h3>
+    <p>{{this.description}}</p>
+    <form action="/admin/facilities/delete/{{this._id}}" method="POST">
+      <button type="submit">Delete Facility</button>
+    </form>
+  </div>
+{{/each}}
+
+<h2>All Reservations</h2>
+{{#each reservations}}
+  <div>
+    <p>{{this.user}} reserved {{this.facility.name}} on {{this.date}} at {{this.timeSlot}}</p>
+    <form action="/admin/reservations/delete/{{this._id}}" method="POST">
+      <button type="submit">Delete Reservation</button>
+    </form>
+  </div>
+{{/each}}
+
+<h2>All Users</h2>
+{{#each users}}
+  <div>
+    <p>{{this.name}} - {{this.email}}</p>
+    <form action="/admin/users/delete/{{this._id}}" method="POST">
+      <button type="submit">Delete User</button>
+    </form>
+  </div>
+{{/each}}

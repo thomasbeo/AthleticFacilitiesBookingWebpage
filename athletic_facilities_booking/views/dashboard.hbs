@@ -1,0 +1,7 @@
+<h2>Κρατήσεις για {{username}}</h2>
+
+<ul>
+  {{#each reservations}}
+    <li>{{this.facility.name}} - {{this.date}} {{this.timeSlot}}</li>
+  {{/each}}
+</ul>
