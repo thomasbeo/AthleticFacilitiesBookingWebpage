@@ -6,7 +6,6 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const dotenv = require('dotenv');
 dotenv.config();
-const hbs = require('hbs');
 const facilityRoutes = require('./routes/facilities');
 const authRoutes = require('./routes/auth');
 const reservationRoutes = require('./routes/reservation');
@@ -14,8 +13,14 @@ const adminRoutes = require('./routes/admin');
 const exphbs = require('express-handlebars');
 const app = express();
 
+//Trust Proxy
+app.set('trust proxy', 1);
+
 // MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
@@ -42,7 +47,10 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
-  cookie: { secure: false } // false για localhost
+  cookie: { 
+    secure: false, // keep false (Render uses HTTPS proxy)
+    httpOnly: true
+  }
 }));
 
 // 1. Set Handlebars as view engine
