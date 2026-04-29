@@ -24,12 +24,6 @@
 
 ---
 
-# 🏟️ Athletic Facilities Booking Web App
-
-<p align="center">
-  A full-stack web application for managing athletic facility reservations, user roles, and admin operations.
-</p>
-
 <p align="center">
   <!-- Tech badges -->
   <img src="https://img.shields.io/badge/Node.js-Backend-green" />
