@@ -24,17 +24,6 @@
 
 ---
 
-<p align="center">
-  <!-- Tech badges -->
-  <img src="https://img.shields.io/badge/Node.js-Backend-green" />
-  <img src="https://img.shields.io/badge/Express.js-API-lightgrey" />
-  <img src="https://img.shields.io/badge/MongoDB-Database-green" />
-  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blue" />
-  <img src="https://img.shields.io/badge/Auth-Login%20%2B%20Roles-orange" />
-</p>
-
----
-
 ## 📑 Table of Contents
 
 - [🚀 How to Run](#-how-to-run)
