@@ -24,221 +24,220 @@
 
 ---
 
-## 📌 Overview
-
-This application allows users to register, authenticate, and manage reservations for athletic facilities in a secure and intuitive environment.
-
-### Key capabilities:
-
-* 🔐 Secure authentication with sessions & reCAPTCHA
-* 📅 Real-time reservation system with availability control
-* 👤 Role-based access (User / Admin)
-* 📧 Automated email notifications
-* 🛠 Admin Back Office for system management
-
----
-
-## 🖼️ Application Preview
-
----
-
-### 🔐 Authentication
+# 🏟️ Athletic Facilities Booking Web App
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6" width="400"/>
-  <img src="https://github.com/user-attachments/assets/3255017c-3d30-46d1-a77c-5e65af324050" width="300"/>
+  A full-stack web application for managing athletic facility reservations, user roles, and admin operations.
 </p>
-
-* Secure login with Google reCAPTCHA
-* User registration stored in MongoDB Atlas
-
----
-
-### 🧭 Dashboard & Navigation
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" width="850"/>
+  <!-- Tech badges -->
+  <img src="https://img.shields.io/badge/Node.js-Backend-green" />
+  <img src="https://img.shields.io/badge/Express.js-API-lightgrey" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-green" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blue" />
+  <img src="https://img.shields.io/badge/Auth-Login%20%2B%20Roles-orange" />
 </p>
-
-* Personalized user interface
-* Dynamic navigation based on authentication state
-* Dropdown account management
 
 ---
 
-### 📅 Reservation System
+## 📑 Table of Contents
+
+- [🚀 How to Run](#-how-to-run)
+- [🔐 Authentication Flow](#-authentication-flow)
+- [🏠 Main Features](#-main-features)
+- [📊 Reservations System](#-reservations-system)
+- [🛠 Admin (Back Office)](#-admin-back-office)
+- [📧 Email Notifications](#-email-notifications)
+- [✏️ Reservation Management](#️-reservation-management)
+
+---
+
+## 🚀 How to Run
+
+Navigate to your project directory: C:\web-app-dev\athletic_facilities_booking
+
+Start the server:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" width="300"/>
-  <img src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" width="700"/>
+  <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" style="max-width: 900px; width: 60%;" />
 </p>
 
-* Create reservations with time-slot selection
-* Prevent double bookings via availability checks
-* Edit and cancel reservations
+Open in browser: http://localhost:3000
 
 ---
 
-### 🔍 Search & Filtering
+## 🔐 Authentication Flow
+
+### Login Page
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d18c9c4c-7272-417c-a7a0-f4545bdecf83" width="850"/>
+  <img src="https://github.com/user-attachments/assets/7d64d35e-f8c2-4e05-b249-34636e836fe6" width="450"/>
 </p>
 
-* Search by user, facility, or date
-* Dynamic filtering of reservation results
+### Registration
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3255017c-3d30-46d1-a77c-5e65af324050" width="250"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3f247283-bf4b-4c52-be22-06b5fd878b44" width="600"/>
+</p>
+
+### Stored in MongoDB
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ef34040f-6b0b-4383-b2d5-5f7a061a15df" width="700"/>
+</p>
 
 ---
 
-### 🛠 Admin Back Office
+## 🏠 Main Features
+
+### Dashboard Overview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c7c28dab-0f96-40fe-988a-cd15f1d6c27f" width="900"/>
+</p>
+
+### Navigation Menu
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f108ceb5-a47b-440f-8c49-426838bdd15c" width="900"/>
+</p>
+
+### Dropdown Menu
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" width="200"/>
+</p>
+
+---
+
+## 📊 Reservations System
+
+### User Reservations
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0e563810-575b-418c-959e-6a8bd34c7bab" width="900"/>
+</p>
+
+### Database Records
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2dbf42d3-065e-49d9-a5c5-8f65b7ea7c20" width="350"/>
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/d01cc520-6f81-4339-bb4e-fd0774cdf1da" width="350"/>
+</p>
+
+---
+
+### All Reservations View
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a352e521-ce02-4f11-bd49-3597b1424e68" width="850"/>
+</p>
+
+### Search Functionality
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d18c9c4c-7272-417c-a7a0-f4545bdecf83" width="900"/>
+</p>
+
+---
+
+## 🛠 Admin (Back Office)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cb836aed-bd70-4b42-9ed0-64320791d153" width="500"/>
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/03278eed-968d-447c-9e9f-76e39498987b" width="350"/>
 </p>
 
-* View canceled reservations
-* Restore reservations
-* Export data to PDF
-* Access restricted to admin users
-
----
-
-### 📧 Email Notifications
+### PDF Export
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8e2fe0f7-ee2a-45c2-8028-a464ef4c85c7" width="400"/>
+  <img src="https://github.com/user-attachments/assets/0e1dc922-8a40-4d5e-b72c-39da3c8d231e" width="400"/>
 </p>
-
-* Reservation confirmation emails
-* Cancellation notifications
-* Password reset emails with secure tokens
 
 ---
 
-### 👤 User Profile
+## 👤 User Profile
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/10803599-dee1-4533-ae37-7409316d2b15" width="350"/>
 </p>
 
-* View account details
-* Role-based UI rendering
+---
+
+## 🚫 Role-Based Access Control
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7a396e80-9eeb-417a-97b8-771e0ed079b2" width="400"/>
+</p>
+
+Only **admin users** can access the Back Office. 
 
 ---
 
-## 🧠 Architecture
+## 🏀 Reservation Creation
 
-### Frontend
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60acaa95-1585-4fec-8c8a-ab664c8588b1" width="300"/>
+</p>
 
-* Vanilla JavaScript (ES6+)
-* Bootstrap 5 (responsive UI)
-* Client-side validation + reCAPTCHA
+### Stored in Database
 
-### Backend
-
-* Node.js + Express.js
-* RESTful API architecture
-* Session-based authentication
-
-### Database
-
-* MongoDB Atlas
-* Mongoose ODM
-
-### Infrastructure
-
-* Render (deployment)
-* Environment variables (.env)
-* Nodemailer (email service)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8b498d01-5774-4f43-8ad8-03a3a327fab5" width="400"/>
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/8a4fa7c3-b3dc-49ab-9256-90334a6d43cb" width="400"/>
+</p>
 
 ---
 
-## 🔐 Authentication & Security
+## 📧 Email Notifications
 
-* Session-based authentication (cookies)
-* Google reCAPTCHA (bot protection)
-* Password hashing via Mongoose middleware
-* Role-based access control (RBAC)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8e2fe0f7-ee2a-45c2-8028-a464ef4c85c7" width="400"/>
+</p>
 
----
-
-## 🚀 Deployment
-
-Deployed on **Render** with:
-
-* Environment variables for:
-
-  * MongoDB URI
-  * Session secret
-  * Email credentials
-  * reCAPTCHA secret key
-
-### Production fixes applied:
-
-* Removed hardcoded `localhost` API URLs
-* Configured secure cookies for production
-* Used dynamic port binding (`process.env.PORT`)
-* Proper static file serving via Express
+Users receive confirmation emails after successful reservations.
 
 ---
 
-## ⚙️ Local Development
+## ✏️ Reservation Management
 
-```bash
-git clone https://github.com/thomasbeo/AthleticFacilitiesBookingWebpage.git
-cd AthleticFacilitiesBookingWebpage
-npm install
-```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/637a4382-e4e1-45b2-b70d-27bb5414780d" width="400"/>
+  &nbsp;&nbsp;<br>
+  <img src="https://github.com/user-attachments/assets/536f2321-fd3c-4d08-bcfa-ce9d333ed208" width="600"/>
+</p>
 
-Create a `.env` file:
-
-```env
-MONGO_URI=your_mongodb_uri
-SESSION_SECRET=your_secret
-EMAIL_USER=your_email
-EMAIL_PASS=your_app_password
-ADMIN_EMAIL=your_admin_email
-RECAPTCHA_SECRET_KEY=your_secret_key
-```
-
-Run the server:
-
-```bash
-node server.js
-```
-
-Open:
-
-```
-http://localhost:3000
-```
+- Modify date and time slot  
+- Delete reservations  
+- Restore via Back Office  
 
 ---
 
-## 🧪 Key Technical Challenges Solved
+## ✅ Final Result
 
-* Migrating from local development → production (Render)
-* Handling session cookies across environments
-* Eliminating hardcoded API endpoints
-* Implementing server-side reCAPTCHA verification
-* Debugging deployment/runtime issues (dotenv, port binding)
+✔ Reservation successfully updated  
+✔ Stored in MongoDB  
+✔ Email notification sent  
 
 ---
 
-## 🔮 Future Improvements
+## ⭐ Future Improvements
 
-* 📱 Mobile-first UI optimization
-* 🔔 Real-time notifications (WebSockets)
-* 📊 Admin analytics dashboard
-* 🌍 Multi-language support
-* ⚡ Migration to React frontend
-
----
-
-## 👨‍💻 Author
-
-**Thomas Beopoulos**
-
-Full-stack developer focused on building real-world, production-ready web applications with strong backend architecture and deployment experience.
+- 🔔 Push notifications  
+- 📱 Mobile-first UI optimization  
+- 📊 Analytics dashboard  
+- 🌍 Deployment (Render / Vercel / AWS)
 
 ---
+
+## 📌 Author
+
+Developed by **Thomas Beopoulos**
