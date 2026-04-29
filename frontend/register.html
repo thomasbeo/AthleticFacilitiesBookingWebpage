@@ -12,7 +12,7 @@
          <div class="col-md-9">
             <div class="card shadow p-4">
                <h3 class="text-center mb-4">Εγγραφή χρήστη</h3>
-               <form id="registration_form" novalidate>
+               <form id="registration_form" novalidate autocomplete="off">
                   <div class="row mb-3">
                         <label for="inputOnoma" class="col col-form-label">Όνομα</label>
                      <div class="col-8"> 
@@ -30,15 +30,19 @@
                   <div class="row mb-3">
                         <label for="inputEmail" class="col col-form-label">Email</label>
                      <div class="col-8"> 
-                        <input type="email" class="form-control" 
-                        id="inputEmail" placeholder="Επίλεξε το mail σου..." required>
+                        <input type="email" 
+                        class="form-control" name="fakeuser" style="display:none"
+                        id="inputEmail" placeholder="Επίλεξε το mail σου..."
+                        autocomplete="off" required>
                      </div>
                   </div>
                   <div class="row mb-3">
                         <label for="inputPassword" class="col col-form-label">Συνθηματικό</label>
                      <div class="col-8">
-                        <input type="password" class="form-control" 
-                        id="inputPassword" placeholder="Επίλεξε το συνθηματικό σου..." required>
+                        <input type="password" name="fakepass" style="display:none"
+                        class="form-control" id="inputPassword" 
+                        placeholder="Επίλεξε το συνθηματικό σου..."
+                        autocomplete="off" required>
                      </div>
                   </div>
                   <div class="g-recaptcha mb-3" 
