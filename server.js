@@ -1,11 +1,10 @@
+dotenv.config();
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const dotenv = require('dotenv');
-dotenv.config();
 const facilityRoutes = require('./routes/facilities');
 const authRoutes = require('./routes/auth');
 const reservationRoutes = require('./routes/reservation');
@@ -17,20 +16,17 @@ const app = express();
 app.set('trust proxy', 1);
 
 // MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: true,
+  credentials: true
+}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
 
 // ⚡ Serve the frontend folder
 app.use(express.static(path.join(__dirname, 'frontend')));
@@ -46,10 +42,15 @@ app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
-  store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
+  store: MongoStore.create({
+    mongoUrl: process.env.MONGO_URI,
+    collectionName: 'sessions'
+  }),
+  proxy: true,
   cookie: { 
-    secure: false, // keep false (Render uses HTTPS proxy)
-    httpOnly: true
+    secure: process.env.NODE_ENV === 'production',
+    httpOnly: true,
+    sameSite: 'lax'
   }
 }));
 
@@ -62,9 +63,6 @@ app.engine('hbs', exphbs.engine({
 }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views')); // views = root του views folder
-
-// 2. Ορίζεις τον φάκελο views
-app.set('views', path.join(__dirname, 'views'));
 
 // API Routes
 app.use('/api/facilities', facilityRoutes); 

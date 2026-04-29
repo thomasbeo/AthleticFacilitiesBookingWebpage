@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('editDate').addEventListener('change', loadEditTimeSlots);
   // Έλεγχος σύνδεσης χρήστη
   try {
-    const res = await fetch('http://localhost:3000/api/me', { credentials: 'include' });
+    const res = await fetch('/api/me', { credentials: 'include' });
     if (!res.ok) return window.location.href = '/login.html';
 
     const user = await res.json();
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     return window.location.href = '/login.html';
   }
 
-  const apiUrl = 'http://localhost:3000/api/facilities';
+  const apiUrl = '/api/facilities';
 
   const facilitiesDiv = document.getElementById('facilities');
   const reservationModal = new bootstrap.Modal(document.getElementById('reservationModal'));
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   async function checkAvailability(facilityId, date) {
     try {
-      const res = await fetch('http://localhost:3000/api/reservations/availability', {
+      const res = await fetch('/api/reservations/availability', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ facilityId, date })
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const facilityId = facilityIdInput.value;
 
     try {
-      const res = await fetch('http://localhost:3000/api/reservations', {
+      const res = await fetch('/api/reservations', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ facility: facilityId, userName, date, timeSlot }),
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } 
 
     try {
-      const res = await fetch(`http://localhost:3000/api/reservations/${id}`, {
+      const res = await fetch(`/api/reservations/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ date, timeSlot }),
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   window.deleteReservation = async (id) => {
     if (!confirm('Είσαι σίγουρος;')) return;
     try {
-      const res = await fetch(`http://localhost:3000/api/reservations/${id}/cancel`, {
+      const res = await fetch(`/api/reservations/${id}/cancel`, {
   method: 'PUT',
   headers: { 'Content-Type': 'application/json' }
 });
@@ -433,7 +433,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('reservationsLink')?.addEventListener('click', async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:3000/api/reservations');
+      const res = await fetch('/api/reservations');
       const reservations = await res.json();
       allReservations = reservations;
       renderReservationSection();
@@ -448,7 +448,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function logout() {
-  fetch('http://localhost:3000/api/logout', {
+  fetch('/api/logout', {
     credentials: 'include'
   })
     .then(() => {

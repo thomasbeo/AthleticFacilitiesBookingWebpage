@@ -18,8 +18,16 @@ router.post('/api/register', async (req, res) => {
   }
 
   try {
-    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6LdVvlgrAAAAADqmisVYw5V09HWvnXfHnfrKCA_N&response=${token}`;
-    const captchaRes = await axios.post(verifyUrl);
+    const captchaRes = await axios.post(
+      'https://www.google.com/recaptcha/api/siteverify',
+      null,
+      {
+        params: {
+          secret: process.env.RECAPTCHA_SECRET_KEY,
+          response: token
+        }
+      }
+    );
 
     if (!captchaRes.data.success) {
       return res.status(400).json({ message: 'Αποτυχία captcha επαλήθευσης.' });
@@ -34,11 +42,13 @@ router.post('/api/register', async (req, res) => {
     req.session.userId = newUser._id;
     res.status(201).json({ message: 'Εγγραφή επιτυχής' });
   } catch (err) {
-    console.error(err);
-    console.error('Captcha error:', err);
-    res.status(500).json({ message: 'Σφάλμα εγγραφής.' });
-    return res.status(500).json({ message: 'Σφάλμα κατά την επαλήθευση captcha.' });
-  }
+      console.error("🔥 REGISTER ERROR:", err);
+      console.error(err.stack);
+      return res.status(500).json({
+        message: 'Σφάλμα εγγραφής.',
+        error: err.message
+    });
+}
 });
 
 // Login
@@ -68,9 +78,14 @@ router.post('/api/login', async (req, res) => {
     req.session.userId = user._id;
     res.json({ message: 'Επιτυχής σύνδεση', user: { id: user._id, name: user.username, role: user.role } });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Σφάλμα κατά τη σύνδεση.' });
-  }
+      console.error("🔥 LOGIN ERROR:", err);
+      console.error(err.stack);
+      return res.status(500).json({
+        message: 'Σφάλμα κατά τη σύνδεση.',
+        error: err.message
+    });
+}
+
 });
 
 // Logout
@@ -101,7 +116,7 @@ router.post('/api/forgot-password', async (req, res) => {
     const sendEmail = require("../sendEmail");
 
     // ...
-    const resetURL = `http://localhost:3000/reset-password.html?token=${token}`;
+    const resetURL = `https://athleticfacilitiesbookingwebpage.onrender.com/reset-password.html?token=${token}`;
     await sendEmail({
       to: user.email,
       subject: "Επαναφορά Συνθηματικού",

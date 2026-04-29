@@ -41,7 +41,10 @@
                         id="inputPassword" placeholder="Επίλεξε το συνθηματικό σου..." required>
                      </div>
                   </div>
-                  <div class="g-recaptcha mb-3" data-sitekey="6LdVvlgrAAAAALrzmCGt2AOGffx4yfo2xVtWO6im"></div>
+                  <div class="g-recaptcha mb-3" 
+                     data-sitekey="6LdVvlgrAAAAALrzmCGt2AOGffx4yfo2xVtWO6im"
+                     >
+                  </div>
                   <button type="submit" id="reg" class="btn btn-primary col-4 offset-4">Εγγραφή</button>
                   <p class="mt-3 text-center">Μετάβαση στη σελίδα <a href="login.html">Σύνδεση χρήστη</a></p>
                </form>
@@ -49,6 +52,7 @@
          </div>
       </div>
    </div>
+   
    <script>
       document.querySelector('#registration_form').addEventListener('submit', async (e) => {
          e.preventDefault();
@@ -71,7 +75,7 @@
          }
 
          try {
-            const res = await fetch('http://localhost:3000/api/register', {
+            const res = await fetch('/api/register', {
                method: 'POST',
                headers: { 'Content-Type': 'application/json' },
                credentials: 'include',
@@ -91,8 +95,15 @@
             console.error('Registration error:', err);
             alert('Σφάλμα κατά την εγγραφή.');
          }
+         if(!(document.querySelector('#registration_form').checkValidity())){
+            e.preventDefault();
+         }
          document.querySelector('#registration_form').classList.add('was-validated');
       });
+      document.getElementById("inputOnoma").setCustomValidity("Το πεδίο Όνομα είναι υποχρεωτικό.");
+      document.getElementById("inputEponymo").setCustomValidity("Το πεδίο Επίθετο είναι υποχρεωτικό.");
+      document.getElementById("inputEmail").setCustomValidity("Το πεδίο Email είναι υποχρεωτικό.");
+      document.getElementById("inputPassword").setCustomValidity("Το πεδίο password είναι υποχρεωτικό.");
    </script>
    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>

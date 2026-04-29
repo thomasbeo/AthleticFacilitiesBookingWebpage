@@ -26,7 +26,10 @@
               </div>
             </div>
             <!-- reCAPTCHA widget -->
-            <div class="g-recaptcha mb-3" data-sitekey="6LdVvlgrAAAAALrzmCGt2AOGffx4yfo2xVtWO6im"></div>
+            <div class="g-recaptcha mb-3" 
+              data-sitekey="6LdVvlgrAAAAALrzmCGt2AOGffx4yfo2xVtWO6im"
+              >
+            </div>
             <button type="submit" class="btn btn-primary w-100">Σύνδεση</button>
           </form>
           
@@ -59,7 +62,7 @@
       }
 
       try {
-        const res = await fetch('http://localhost:3000/api/login', {
+        const res = await fetch('/api/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           credentials: 'include', // ΑΠΑΡΑΙΤΗΤΟ για αποθήκευση cookie session
@@ -69,15 +72,15 @@
         const data = await res.json();
 
         if (res.ok) {
-          localStorage.setItem('userName', data.user.name); // name -> fullName που στείλαμε
-          alert('Επιτυχής σύνδεση!');
-          window.location.href = '/index.html';
+            localStorage.setItem('userName', data.user.name); // name -> fullName που στείλαμε
+            alert('Επιτυχής σύνδεση!');
+            window.location.href = '/index.html';
         } else {
-          alert(data.message);
+            alert(data.message);
         }
       } catch (err) {
-        console.error(err);
-        alert('Σφάλμα κατά τη σύνδεση.');
+        console.error("LOGIN FETCH ERROR:", err);
+        alert(err.message || JSON.stringify(err));
       }
 
       if(!(document.querySelector('#loginForm').checkValidity())){
