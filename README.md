@@ -59,6 +59,20 @@
   <img src="https://github.com/user-attachments/assets/ef34040f-6b0b-4383-b2d5-5f7a061a15df" width="700"/>
 </p>
 
+### Forgot password restoration
+
+Suppose a user forgets the password, then by clicking:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c9be0fa-f3f8-4564-8ba8-eb40fb208797" width="400"/>
+</p>
+
+A form appears where:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/084f9a97-d295-474f-bdab-dcc4b742d207" width="400"/>
+</p>
+
 ---
 
 ## 🏠 Main Features
