@@ -26,27 +26,12 @@
 
 ## 📑 Table of Contents
 
-- [🚀 How to Run](#-how-to-run)
 - [🔐 Authentication Flow](#-authentication-flow)
 - [🏠 Main Features](#-main-features)
 - [📊 Reservations System](#-reservations-system)
 - [🛠 Admin (Back Office)](#-admin-back-office)
 - [📧 Email Notifications](#-email-notifications)
 - [✏️ Reservation Management](#️-reservation-management)
-
----
-
-## 🚀 How to Run
-
-Navigate to your project directory: C:\web-app-dev\athletic_facilities_booking
-
-Start the server:
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0503ef3d-17f7-4be2-a7c5-4ac3cd0eb1d7" style="max-width: 900px; width: 60%;" />
-</p>
-
-Open in browser: http://localhost:3000
 
 ---
 
