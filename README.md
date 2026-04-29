@@ -217,7 +217,6 @@ Users receive confirmation emails after successful reservations.
 - 🔔 Push notifications  
 - 📱 Mobile-first UI optimization  
 - 📊 Analytics dashboard  
-- 🌍 Deployment (Render / Vercel / AWS)
 
 ---
 
