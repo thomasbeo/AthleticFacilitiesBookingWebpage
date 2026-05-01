@@ -64,7 +64,7 @@
 Suppose a user forgets the password, then by clicking:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8c9be0fa-f3f8-4564-8ba8-eb40fb208797" width="400"/>
+  <img src="https://github.com/user-attachments/assets/8c9be0fa-f3f8-4564-8ba8-eb40fb208797" width="250"/>
 </p>
 
 A form appears where:
