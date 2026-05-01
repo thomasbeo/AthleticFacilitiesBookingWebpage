@@ -431,37 +431,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Το κουμπί Κρατήσεις να κάνει κατευθείαν fetch κρατήσεων
   document.getElementById('reservationsLink')?.addEventListener('click', async (e) => {
-    // e.preventDefault();
-    // try {
-    //   const res = await fetch('/api/reservations');
-    //   const reservations = await res.json();
-    //   allReservations = reservations;
-    //   renderReservationSection();
-    //   displayReservations(reservations);
-    // } catch (err) {
-    //   console.error('Error fetching reservations:', err);
-    //   reservationsDiv.innerHTML = `<p class="text-danger">Σφάλμα κατά τη φόρτωση κρατήσεων.</p>`;
-    // }
     e.preventDefault();
-
     try {
-      const res = await fetch('/api/me', { credentials: 'include' });
-      const user = await res.json();
-
-      if (user.role !== 'admin') {
-        alert('Δεν έχετε δικαίωμα πρόσβασης.');
-        return;
-      }
-
-      const r = await fetch('/api/reservations');
-      const reservations = await r.json();
-
+      const res = await fetch('/api/reservations');
+      const reservations = await res.json();
       allReservations = reservations;
       renderReservationSection();
       displayReservations(reservations);
-
     } catch (err) {
-      console.error(err);
+      console.error('Error fetching reservations:', err);
+      reservationsDiv.innerHTML = `<p class="text-danger">Σφάλμα κατά τη φόρτωση κρατήσεων.</p>`;
     }
   });
 
