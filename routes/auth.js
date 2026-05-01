@@ -99,44 +99,36 @@ router.get('/api/logout', (req, res) => {
 router.post('/api/forgot-password', async (req, res) => {
   try {
     const { email } = req.body;
+    console.log("📩 Forgot password request for:", email);
+
     const user = await User.findOne({ email });
 
     if (!user) {
+      console.log("❌ User not found");
       return res.status(404).json({ message: 'Δεν βρέθηκε χρήστης με αυτό το email.' });
     }
 
-    // Δημιουργία token
     const token = crypto.randomBytes(20).toString('hex');
 
-    // Αποθήκευση token και λήξης
     user.resetPasswordToken = token;
-    user.resetPasswordExpires = Date.now() + 3600000; // 1 ώρα
+    user.resetPasswordExpires = Date.now() + 3600000;
     await user.save();
 
-    const sendEmail = require("../sendEmail");
-
-    // ...
     const resetURL = `https://athleticfacilitiesbookingwebpage.onrender.com/reset-password.html?token=${token}`;
+
+    console.log("🔗 Reset URL:", resetURL);
+
     await sendEmail({
       to: user.email,
       subject: "Επαναφορά Συνθηματικού",
-      text: `Πατήστε τον παρακάτω σύνδεσμο για επαναφορά συνθηματικού: ${resetURL}`,
-      html: `<p>Πατήστε τον παρακάτω σύνδεσμο για να επαναφέρετε το συνθηματικό σας:</p>
-            <a href="${resetURL}">${resetURL}</a>`
-    });
-
-    // Email προς τον χρήστη
-    await sendEmail({
-      to: user.email,
-      subject: 'Επαναφορά Συνθηματικού',
-      text: `Πατήστε τον παρακάτω σύνδεσμο για επαναφορά συνθηματικού: ${resetURL}`,
-      html: `<p>Πατήστε τον παρακάτω σύνδεσμο για να επαναφέρετε το συνθηματικό σας:</p>
-            <a href="${resetURL}">${resetURL}</a>`
+      text: `Reset link: ${resetURL}`,
+      html: `<a href="${resetURL}">${resetURL}</a>`
     });
 
     res.json({ message: '📧 Στάλθηκε email επαναφοράς συνθηματικού.' });
+
   } catch (err) {
-    console.error(err);
+    console.error("🔥 FORGOT PASSWORD ERROR:", err);
     res.status(500).json({ message: 'Σφάλμα διακομιστή.' });
   }
 });
