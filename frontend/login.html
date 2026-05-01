@@ -49,8 +49,54 @@
   </div>
 
   <script>
+    // document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    //   e.preventDefault();
+
+    //   const email = document.getElementById('email').value;
+    //   const password = document.getElementById('password').value;
+    //   const token = grecaptcha.getResponse();
+
+    //   if (!token) {
+    //     alert("Παρακαλώ επιβεβαιώστε ότι δεν είστε ρομπότ.");
+    //     return;
+    //   }
+
+    //   try {
+    //     const res = await fetch('/api/login', {
+    //       method: 'POST',
+    //       headers: { 'Content-Type': 'application/json' },
+    //       credentials: 'include', // ΑΠΑΡΑΙΤΗΤΟ για αποθήκευση cookie session
+    //       body: JSON.stringify({ email, password, token }),
+    //     });
+
+    //     const data = await res.json();
+
+    //     if (res.ok) {
+    //         localStorage.setItem('userName', data.user.name); // name -> fullName που στείλαμε
+    //         alert('Επιτυχής σύνδεση!');
+    //         window.location.href = '/index.html';
+    //     } else {
+    //         alert(data.message);
+    //     }
+    //   } catch (err) {
+    //     console.error("LOGIN FETCH ERROR:", err);
+    //     alert(err.message || JSON.stringify(err));
+    //   }
+
+    //   if(!(document.querySelector('#loginForm').checkValidity())){
+    //     e.preventDefault();
+    //   }
+    //   document.querySelector('#loginForm').classList.add('was-validated');
+    // });
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      const form = document.getElementById('loginForm');
+
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
 
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
@@ -65,31 +111,25 @@
         const res = await fetch('/api/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          credentials: 'include', // ΑΠΑΡΑΙΤΗΤΟ για αποθήκευση cookie session
+          credentials: 'include',
           body: JSON.stringify({ email, password, token }),
         });
 
         const data = await res.json();
 
         if (res.ok) {
-            localStorage.setItem('userName', data.user.name); // name -> fullName που στείλαμε
-            alert('Επιτυχής σύνδεση!');
-            window.location.href = '/index.html';
+          localStorage.setItem('userName', data.user.name);
+          window.location.href = '/index.html';
         } else {
-            alert(data.message);
+          alert(data.message);
         }
       } catch (err) {
         console.error("LOGIN FETCH ERROR:", err);
-        alert(err.message || JSON.stringify(err));
+        alert("Σφάλμα σύνδεσης.");
       }
-
-      if(!(document.querySelector('#loginForm').checkValidity())){
-        e.preventDefault();
-      }
-      document.querySelector('#loginForm').classList.add('was-validated');
     });
-    document.getElementById("email").setCustomValidity("Το πεδίο Email είναι υποχρεωτικό.");
-    document.getElementById("password").setCustomValidity("Το πεδίο Κωδικός είναι υποχρεωτικό.");
+    // document.getElementById("email").setCustomValidity("Το πεδίο Email είναι υποχρεωτικό.");
+    // document.getElementById("password").setCustomValidity("Το πεδίο Κωδικός είναι υποχρεωτικό.");
     document.getElementById("togglePassword").addEventListener('click', function () {
       const passwordField = document.getElementById("password");
       const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';

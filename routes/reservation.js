@@ -198,13 +198,25 @@ router.post('/api/reservations/availability', async (req, res) => {
 
 // ------------------------- Όλες οι κρατήσεις (για admin ή προβολή) ------------------------- //
 router.get('/api/reservations', async (req, res) => {
-  try {
-    const reservations = await Reservation.find({ isCanceled: { $ne: true } }).populate('facility');
-    res.json(reservations);
-  } catch (err) {
-    console.error('Error fetching reservations:', err);
-    res.status(500).json({ message: 'Σφάλμα ανάκτησης κρατήσεων' });
+  // try {
+  //   const reservations = await Reservation.find({ isCanceled: { $ne: true } }).populate('facility');
+  //   res.json(reservations);
+  // } catch (err) {
+  //   console.error('Error fetching reservations:', err);
+  //   res.status(500).json({ message: 'Σφάλμα ανάκτησης κρατήσεων' });
+  // }
+  if (!req.session.userId) {
+    return res.status(401).json({ message: 'Unauthorized' });
   }
+
+  const user = await User.findById(req.session.userId);
+
+  if (user.role !== 'admin') {
+    return res.status(403).json({ message: 'Access denied' });
+  }
+
+  const reservations = await Reservation.find().populate('facility');
+  res.json(reservations);
 });
 
 // Ακύρωση κράτησης (soft delete)
