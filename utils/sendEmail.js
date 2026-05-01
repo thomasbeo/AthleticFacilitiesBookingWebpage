@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
   host: process.env.MAILTRAP_HOST,
-  port: process.env.MAILTRAP_PORT,
+  port: Number(process.env.MAILTRAP_PORT),
   auth: {
     user: process.env.MAILTRAP_USER,
     pass: process.env.MAILTRAP_PASS
@@ -22,8 +22,8 @@ async function sendEmail({ to, subject, text, html }) {
     });
     console.log("✅ Email sent:", info.messageId);
   } catch (err) {
-    console.error("❌ Error sending email:", err);
-    throw err; // 🔥 CRITICAL FIX
+      console.error("❌ Error sending email:", err);
+      throw err; // 🔥 CRITICAL FIX
   }
 }
 

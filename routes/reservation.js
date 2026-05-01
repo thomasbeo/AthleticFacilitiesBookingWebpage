@@ -77,11 +77,21 @@ router.post('/reserve/:id', isAuthenticated, async (req, res) => {
       timeSlot
     });
 
-    await sendEmail(
-      user.email,
-      'Reservation Confirmed',
-      `<h1>Reservation Successful!</h1><p>You reserved: ${facility.name}</p><p>Date: ${date}</p><p>Time Slot: ${timeSlot}</p>`
-    );
+    try{
+      await sendEmail({
+        to: user.email,
+        subject: 'Reservation Confirmed',
+        html: `<h1>Reservation Successful!</h1>
+              <p>You reserved: ${facility.name}</p>
+              <p>Date: ${date}</p>
+              <p>Time Slot: ${timeSlot}</p>`
+      });
+    } catch(emailErr){
+      console.error("EMAIL FAILED:", emailErr);
+      return res.status(500).json({
+        message: 'Αποτυχία αποστολής email.'
+      });
+    }
 
     res.redirect('/dashboard');
   } catch (err) {
@@ -197,9 +207,12 @@ router.post('/api/reservations/availability', async (req, res) => {
 });
 
 // ------------------------- Όλες οι κρατήσεις (για admin ή προβολή) ------------------------- //
-router.get('/api/reservations', async (req, res) => {
+router.get('/api/reservations', isAdmin, async (req, res) => {
   try {
-    const reservations = await Reservation.find({ isCanceled: { $ne: true } }).populate('facility');
+    const reservations = await Reservation
+      .find({ isCanceled: { $ne: true } })
+      .populate('facility');
+
     res.json(reservations);
   } catch (err) {
     console.error('Error fetching reservations:', err);
