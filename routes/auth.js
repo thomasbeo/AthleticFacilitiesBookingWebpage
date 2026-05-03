@@ -1,7 +1,7 @@
+const sendEmail = require('../utils/sendEmail');
 const axios = require('axios');
 const express = require('express');
 const crypto = require('crypto');
-const nodemailer = require('nodemailer');
 const User = require('../models/User');
 const router = express.Router();
 
@@ -114,7 +114,7 @@ router.post('/api/forgot-password', async (req, res) => {
     user.resetPasswordExpires = Date.now() + 3600000;
     await user.save();
 
-    const resetURL = `https://athleticfacilitiesbookingwebpage.onrender.com/reset-password.html?token=${token}`;
+    const resetURL = `https://athletic-booking-app.onrender.com/reset-password.html?token=${token}`;
 
     console.log("🔗 Reset URL:", resetURL);
 
