@@ -118,14 +118,18 @@ router.post('/api/forgot-password', async (req, res) => {
 
     console.log("🔗 Reset URL:", resetURL);
 
-    await sendEmail({
-      to: user.email,
-      subject: "Επαναφορά Συνθηματικού",
-      text: `Reset link: ${resetURL}`,
-      html: `<a href="${resetURL}">${resetURL}</a>`
-    });
+    try {
+      await sendEmail({
+        to: user.email,
+        subject: "Reset Password",
+        text: resetURL,
+        html: `<a href="${resetURL}">${resetURL}</a>`
+      });
+    } catch (err) {
+      console.error("⚠️ Email failed but continuing:", err.message);
+    }
 
-    res.json({ message: '📧 Στάλθηκε email επαναφοράς συνθηματικού.' });
+    res.json({ message: 'Αν υπάρχει λογαριασμός, στάλθηκε email.' });
 
   } catch (err) {
     console.error("🔥 FORGOT PASSWORD ERROR:", err);
