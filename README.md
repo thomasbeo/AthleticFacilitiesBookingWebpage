@@ -67,13 +67,13 @@
 
 ### Forgot password restoration
 
-Suppose a user forgets the password, then by clicking:
+Suppose the user forgets the password, then by clicking:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8c9be0fa-f3f8-4564-8ba8-eb40fb208797" width="250"/>
 </p>
 
-A form appears where:
+A form appears where he can give the email address and then clicking the button ""
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/084f9a97-d295-474f-bdab-dcc4b742d207" width="400"/>
