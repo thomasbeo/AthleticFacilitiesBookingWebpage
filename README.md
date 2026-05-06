@@ -79,10 +79,10 @@ A form appears where he can give the email address:
   <img src="https://github.com/user-attachments/assets/6e38552c-4263-449a-87de-74e08232b1a5" width="400"/>
 </p>
 
-and then by clicking the button "Αποστολή" and waiting for like 1-2 minutes we get the message:
+and then by clicking the button "Αποστολή" and waiting for like 2 minutes we get the message:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cd71d65c-04b8-4ad6-83be-22545c47a29f" width="350"/>
+  <img src="https://github.com/user-attachments/assets/cd71d65c-04b8-4ad6-83be-22545c47a29f" width="450"/>
 </p>
 
 Then if we go to Logs on Render and refresh the page we see:
