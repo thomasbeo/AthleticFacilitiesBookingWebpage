@@ -79,10 +79,23 @@ A form appears where he can give the email address:
   <img src="https://github.com/user-attachments/assets/6e38552c-4263-449a-87de-74e08232b1a5" width="400"/>
 </p>
 
-and then clicking the button "Αποστολή" we get the message:
+and then by clicking the button "Αποστολή" and waiting for like 1-2 minutes we get the message:
 
 <p align="center">
-  
+  <img src="https://github.com/user-attachments/assets/cd71d65c-04b8-4ad6-83be-22545c47a29f" width="350"/>
+</p>
+
+Then if we go to Logs on Render and refresh the page we see:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/da4d5814-73b8-4ef1-b9ee-2e3bcd4739a2" width="700"/>
+</p>
+
+If we click this we get redirected to a new form which the user can change the password. For example down below if we enter a new password:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/abd0ae10-bdd2-4fa6-94c4-42113f04d08e" width="400"/>
+  <img src="https://github.com/user-attachments/assets/f1da8bee-3164-47c5-9d7d-e32a34e71403" width="400"/>
 </p>
 
 ---
