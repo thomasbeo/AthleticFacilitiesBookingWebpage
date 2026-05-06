@@ -98,6 +98,8 @@ If we click this we get redirected to a new form which the user can change the p
   <img src="https://github.com/user-attachments/assets/f1da8bee-3164-47c5-9d7d-e32a34e71403" width="400"/>
 </p>
 
+So the password has changed successfully. Now we can go back to the login.html page and login with the new password.
+
 ---
 
 ## 🏠 Main Features
