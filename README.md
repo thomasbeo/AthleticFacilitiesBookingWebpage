@@ -119,7 +119,7 @@ So the password has changed successfully. Now we can go back to the login.html p
 ### Dropdown Menu
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" width="150" height="100"/>
+  <img src="https://github.com/user-attachments/assets/b597b699-cddc-4489-ab74-9260da2d2bdd" width="150"/>
 </p>
 
 ---
